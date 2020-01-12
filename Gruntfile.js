@@ -7,6 +7,9 @@ module.exports = function (grunt) {
     // Automatically load required Grunt tasks
     require('jit-grunt')(grunt);
 
+
+
+
     // Define the configuration for all the tasks
     grunt.initConfig({
         sass: {
@@ -15,6 +18,9 @@ module.exports = function (grunt) {
                     'css/styles.css': 'css/styles.scss'
                 }
             }
+        },
+        jshint: {
+            all: ['Gruntfile.js']
         },
         watch: {
             files: 'css/*.scss',
@@ -41,6 +47,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('css', ['sass']);
     grunt.registerTask('default', ['browserSync', 'watch']);
-    grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+
 
 };
