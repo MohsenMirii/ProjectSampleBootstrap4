@@ -15,7 +15,6 @@
     "imagemin": "imagemin img/* --out-dir='dist/img'",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
-
   },
   "author": "",
   "license": "ISC",
@@ -35,5 +34,9 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MohsenMirii/repository.git"
   }
 }
